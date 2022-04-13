@@ -15,9 +15,6 @@ $(document).ready(function () {
     var update = function($con){
         if($con.hasClass("question")){
             $children = $con.children();
-            if($children.length == 0){
-                $con.text($con.attr("id"));
-            } 
             if($children.hasClass("answer")){
                 $con.addClass("has-answer");
                 $con.contents().each(function(){
@@ -71,7 +68,8 @@ $(document).ready(function () {
         var num_wrong =0;
         $('.question').each(function() {
             $q = $(this);
-			if("a" + $q.attr("id") == $q.children().attr("id")){
+			if((($q.attr("id") == "1") && (($q.children().attr("id") == "a1")||($q.children().attr("id") == "a2"))) ||
+            (($q.attr("id") == "2") && (($q.children().attr("id") == "a1")||($q.children().attr("id") == "a2")))){
                 $q.css('background', 'green');
                 $q.children().draggable('disable');
                 $q.droppable('disable');
