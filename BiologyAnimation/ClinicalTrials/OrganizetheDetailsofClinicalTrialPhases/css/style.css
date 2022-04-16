@@ -30,18 +30,17 @@ div.question-container {
     transform: translateX(-50%);
     height: 100%;
     width: 65%;
-    background-image: url("../img/slide_46_matching_games.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 @media screen and (max-width: 480px) {
     html, body {
-        height: 800px;
+        height: 900px;
     }
 
     div#master-container {
-        height: 800px;
+        height: 900px;
     }
 }
 
@@ -96,7 +95,7 @@ and (max-device-width : 1024px) {
 
      div.button-container {
         position: relative;
-        top: 120% !important;
+        /* top: 120% !important; */
          left: 15%;
         text-align: center;
         display: inline;
