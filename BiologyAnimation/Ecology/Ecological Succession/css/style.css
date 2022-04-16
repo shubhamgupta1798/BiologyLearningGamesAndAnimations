@@ -36,6 +36,7 @@ div.question-container {
 }
 
 
+
 @media screen and (max-width: 480px) { 
     html, body {
         height: 800px;
@@ -48,6 +49,15 @@ div.question-container {
        margin-top: 140%;
        height:20%;
     }
+
+    button#submit { 
+        margin-top: 180%;
+     }
+
+
+
+    div#result {
+    position: absolute;}
 
   
 }
