@@ -5,6 +5,18 @@
     <title>Drag and Drop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+        var timer1 = setInterval(function(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+            if( $('.question-container').height() > 0 ){
+          if(width>1050)
+          {
+                    $('#master-container').css( 'height' , 'auto' );
+          }
+                clearInterval(timer1);
+            }
+        }, 100);
+    </script>
   </head>
   <body>
     <!-- jquery scripts -->
