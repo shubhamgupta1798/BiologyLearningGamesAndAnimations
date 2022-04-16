@@ -4,7 +4,7 @@ $(document).ready(function () {
     data.forEach(function (item) {
         console.log(item);
         answers.append($(
-`<input type="radio"   class="option" name="question1" id="${item["id"]}"  ><label font-size:1.875em;>${item["value"]}</label></input><br>`))
+`<input type="radio"   class="option" name="question1" id="${item["id"]}"  ><label style="font-size: 22px;">${item["value"]}</label></input><br>`))
     });
     
     var move_to = function($obj, $target) {
