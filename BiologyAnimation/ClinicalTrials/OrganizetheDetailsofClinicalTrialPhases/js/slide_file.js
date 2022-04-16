@@ -89,29 +89,35 @@ $(document).ready(function () {
 
     $("#submit").click(function() {
         var numCorrect = 0;
+        var single=0;
+
         $('.dropBox').each(function() {
             $q = $(this);
+
             // if ($q.attr("id") == "#" + $q.children().attr("id")) {
 if ((($q.attr("id") == "#1" || $q.attr("id") == "#2" || $q.attr("id") == "#3" )
 && (($q.children().attr("id") == 1 ) || ($q.children().attr("id") == 2)||($q.children().attr("id") == 3) ||($q.children().attr("id") == 4) ||($q.children().attr("id") == 6) ))
     ||
 
 (($q.attr("id") == "#4" || $q.attr("id") == "#5" || $q.attr("id") == "#6" )
-&& (($q.children().attr("id") == 1) ||($q.children().attr("id") == 4) ||($q.children().attr("id") == 5)||($q.children().attr("id") == 7)||($q.children().attr("id") == 9) ))
+&& (($q.children().attr("id") == 1) ||($q.children().attr("id") == 4) ||($q.children().attr("id") == 5)||($q.children().attr("id") == 7) ))
 ||
 (($q.attr("id") == "#7" || $q.attr("id") == "#8" || $q.attr("id") == "#9" )
-&& (($q.children().attr("id") == 3) ||($q.children().attr("id") == 6) ||($q.children().attr("id") == 7)||($q.children().attr("id") == 8)||($q.children().attr("id") == 9) ))
+&& (($q.children().attr("id") == 3) ||($q.children().attr("id") == 6) ||($q.children().attr("id") == 8)||($q.children().attr("id") == 12) ))
 ||
 (($q.attr("id") == "#10" || $q.attr("id") == "#11" || $q.attr("id") == "#12" )
-&& (($q.children().attr("id") == 10)  ))
+&& (($q.children().attr("id") == 10)|| ($q.children().attr("id") == 11)  ))
 )
 
 {
+
                 numCorrect += 1;
                 $q.addClass('correct');
+                if(!(($q.children().attr("id") == 1) || ($q.children().attr("id") == 4) ||($q.children().attr("id") == 3) ||($q.children().attr("id") == 6))){
                 $q.children().draggable('disable');
                 $q.droppable('disable');
                 $q.off('dblclick');
+              }
             } else {
                 if ($q.hasClass("has-answer")) {
                     $q.addClass('incorrect');
@@ -128,7 +134,7 @@ if ((($q.attr("id") == "#1" || $q.attr("id") == "#2" || $q.attr("id") == "#3" )
             }
         });
 
-         $('#result').text(`You matched ${numCorrect}/10  options correctly!`);
+         $('#result').text(`You matched ${numCorrect}/11  options correctly!`);
 
         window.setTimeout(function() {
             $('#result').text('');
