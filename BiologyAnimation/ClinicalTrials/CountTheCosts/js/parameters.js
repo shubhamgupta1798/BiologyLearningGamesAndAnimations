@@ -5,31 +5,31 @@ var data = [
 	},
 	{
 		"id": 2,
-		"value": "Food"
-	},
-	{
-		"id": 3,
-		"value": "Education"
-	},
-	{
-		"id": 4,
 		"value": "Facilities"
 	},
 	{
-		"id": 5,
-		"value": "Vacation"
-	},
-	{
-		"id": 6,
+		"id": 3,
 		"value": "Veterinarians"
 	},
 	{
-		"id": 7,
+		"id": 4,
 		"value": "Patients/Subjects"
 	},
 	{
-		"id": 8,
+		"id": 5,
 		"value": "Data analysis"
+	},
+	{
+		"id": 6,
+		"value": "Physicalprocesses"
+	},
+	{
+		"id": 7,
+		"value": "Food"
+	},
+	{
+		"id": 8,
+		"value": "Vacation"
 	},
 	{
 		"id": 9,
@@ -45,7 +45,7 @@ var data = [
 	},
 	{
 		"id": 12,
-		"value": "Physicalprocesses"
+		"value": "Education"
 	}
 ];	
 	
