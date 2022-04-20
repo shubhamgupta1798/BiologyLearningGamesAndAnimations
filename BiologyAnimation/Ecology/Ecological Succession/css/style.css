@@ -46,18 +46,20 @@ div.question-container {
         height: 800px;
     }
      div.word-bank {
-       margin-top: 140%;
+       margin: -20%;
        height:20%;
+       width:80%;
+       margin-left:3%;
     }
 
     button#submit { 
-        margin-top: 180%;
+        margin-top: 120%;
      }
 
 
-
     div#result {
-    position: absolute;}
+    position: fixed;
+    top: 80%;}
 
   
 }
@@ -122,7 +124,7 @@ and (max-device-width : 1024px) {
     }
 
     #result {
-        top: 180% !important;
+        
         bottom: 0 !important;
         text-align: center;
         width: 90%;
@@ -151,8 +153,9 @@ div.answer-container {
 div.word-bank {
     position: absolute;
     left: 8%;
+    top: 80%;
     right: 5%;
-    width: 80%;
+    
     
     border: 2px solid black;
 }
@@ -175,7 +178,7 @@ div.button-container {
     text-align: center;
     cursor: pointer;
     margin-top: 40%;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 
