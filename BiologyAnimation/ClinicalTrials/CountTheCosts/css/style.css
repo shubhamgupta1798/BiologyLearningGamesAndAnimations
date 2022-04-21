@@ -37,11 +37,11 @@ div.question-container {
 
 @media screen and (max-width: 480px) { 
     html, body {
-        height: 800px;
+        height: 900px;
     }
 
     div#master-container {
-        height: 800px;
+        height: 900px;
     }
 }
 
