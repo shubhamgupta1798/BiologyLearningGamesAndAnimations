@@ -75,6 +75,7 @@ width:100%;
   border-radius: 10px;
   text-align: center;
   color: black;
+  font-size:1em;
   font-weight: 700;
 }
 
@@ -94,6 +95,26 @@ width:100%;
   cursor: pointer;
   margin: 2%;
   font-size: 1.6vw;
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        height: 900px;
+    }
+
+    div#master-container {
+        height: 900px;
+    }
+    .dropBox {
+      position: absolute;
+      background: #ffc6ff;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+      color: black;
+      font-size:0.5em;
+      font-weight: 700;
+    }
 }
 
 .dropBox > .answer {

@@ -66,6 +66,7 @@ $(document).ready(function () {
           $q.css('background', '#ffc6ff');
           $q.droppable('enable');
           if($q.hasClass("has-answer")){
+            $q.children().draggable('enable');
             move_to($q.children(), $(".word-bank"));
           }
         }
