@@ -10,7 +10,7 @@ $(document).ready(function () {
         if($con.hasClass("dropBox")){
             $children = $con.children();
             if($children.length == 0){
-                $con.text($con.attr("id"));
+                //$con.text($con.attr("id"));
             }
             if($children.hasClass("answer")){
                 $con.addClass("has-answer");
