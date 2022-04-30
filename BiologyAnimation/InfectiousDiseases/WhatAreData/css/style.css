@@ -64,7 +64,7 @@ div.submit-container{
 
 .question{
     position: absolute;
-    border: 2px solid black;
+    border: 1px solid black;
     background: cyan;
     text-align: center;
 }

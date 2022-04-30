@@ -30,23 +30,22 @@ div.question-container {
     transform: translateX(-50%);
     height: 100%;
     width: 65%;
-    background-image: url("../img/slide_46_matching_games.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 480px) {
     html, body {
-        height: 800px;
+        height: 900px;
     }
 
     div#master-container {
-        height: 800px;
+        height: 900px;
     }
 }
 
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
     html, body {
         height: 1000px;
@@ -57,8 +56,8 @@ and (max-device-width : 1024px) {
     }
 }
 
-@media screen and (max-width: 480px), only screen 
-and (min-device-width : 768px) 
+@media screen and (max-width: 480px), only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
     div#master-container {
         padding-top: 0;
@@ -93,16 +92,16 @@ and (max-device-width : 1024px) {
         top: 120% !important;
         padding-top: 0 !important;
     } */
-    
+
      div.button-container {
         position: relative;
-        top: 120% !important;
+        /* top: 120% !important; */
          left: 15%;
         text-align: center;
         display: inline;
         padding: 2%;
      }
-     
+
     div.hint-container {
         top: 130% !important;
         padding-top: 0 !important;
@@ -131,8 +130,8 @@ div.answer-container {
     position: absolute;
     top: 0;
     left: 75%;
-    width: 15%; 
-    height: 70%;
+    width: 15%;
+    height: 80%;
 }
 
 div.word-bank {
@@ -140,7 +139,7 @@ div.word-bank {
     left: 5%;
     right: 5%;
     width: 80%;
-    height: 85%;
+    height: 90%;
     border: 2px solid black;
 }
 

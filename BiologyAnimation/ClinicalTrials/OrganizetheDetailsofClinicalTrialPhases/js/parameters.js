@@ -1,8 +1,7 @@
 var data = [
 	{
 		"id": 1,
-		"value": "Safety",
-		"font-size": 100
+		"value": "Safety"
 	},
 	{
 		"id": 2,
@@ -33,11 +32,15 @@ var data = [
 		"value": "Comparision to similar treatments"
 	},
 	{
-		"id": 9,
-		"value": "At least 100 people"
-	},
-	{
 		"id": 10,
 		"value": "Long term study"
+	},
+	{
+		"id": 11,
+		"value": "Large groups of people"
+	},
+	{
+		"id": 12,
+		"value": "Several hundred people or more"
 	}
 ];

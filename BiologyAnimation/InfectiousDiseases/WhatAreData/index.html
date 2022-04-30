@@ -3,6 +3,18 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+	    var timer1 = setInterval(function(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+		    if( $('.question-container').height() > 0 ){
+          if(width>1050)
+          {
+				    $('#master-container').css( 'height' , 'auto' );
+          }
+				clearInterval(timer1);
+			}
+		}, 100);
+	</script>
   </head>
   
   <body>
@@ -22,7 +34,7 @@
 	  
 		<div class="question" style="top:25.7%; left:33.1%; width:16.5%; height:4%" id=1></div>
         <div class="question" style="top:25.7%; left:78%; width:16.5%; height:4%" id=2></div>
-        <div class="question" style="top:31%; left:23%; width:19%; height:3.9%" id=3></div>
+        <div class="question" style="top:31%; left:27%; width:19%; height:3.9%" id=3></div>
      
 		
       </div>
